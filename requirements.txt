@@ -1,0 +1,9 @@
+notebook==6.4.11
+pandas==1.4.2
+numpy==1.22.3
+seaborn==0.11.2
+matplotlib==3.5.2
+ipykernel==6.13.0
+jupyter==1.00
+scikit-learn==1.0.1
+PyYAML==6.0

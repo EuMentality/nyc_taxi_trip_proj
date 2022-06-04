@@ -1,0 +1,5 @@
+nyc_taxi
+ml/notebooks/.ipynb_checkpoints
+ml/notebooks/Rosneft.ipynb
+ml/notebooks/taxi_trip_duration.ipynb
+.DS_Store
