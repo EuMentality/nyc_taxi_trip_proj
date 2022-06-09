@@ -1,0 +1,14 @@
+data_split:
+  test_size:
+    0.25
+  test_split_seed:
+    20
+  valid_size:
+    0.25 
+  valid_split_seed:
+    20
+    
+hyperparams:
+  seed:
+
+  
