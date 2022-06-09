@@ -1,5 +1,6 @@
-nyc_taxi
-ml/notebooks/.ipynb_checkpoints
-ml/notebooks/Rosneft.ipynb
-ml/notebooks/taxi_trip_duration.ipynb
+backend/taxi_nyc_backend
+backend/notebooks/.ipynb_checkpoints
+backend/notebooks/Rosneft.ipynb
+backend/notebooks/taxi_trip_duration.ipynb
+backend/notebooks/catboost_info
 .DS_Store
