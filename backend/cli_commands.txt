@@ -1,0 +1,5 @@
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+#run app
+uvicorn app:app --reload --port 5005

@@ -3,4 +3,5 @@ backend/notebooks/.ipynb_checkpoints
 backend/notebooks/Rosneft.ipynb
 backend/notebooks/taxi_trip_duration.ipynb
 backend/notebooks/catboost_info
+backend/__pycache__
 .DS_Store
