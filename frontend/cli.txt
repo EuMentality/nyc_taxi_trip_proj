@@ -1,0 +1,1 @@
+streamlit run frontend_app.py --server.port 8905

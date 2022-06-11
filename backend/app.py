@@ -63,7 +63,7 @@ def data_preprocess(x):
 @app.post('/predict')
 async def trip_duration(trip: TripConfigure):
     trip = data_preprocess(trip)
-    prediction = np.exp(model.predict(trip)[0]) - 1
+    prediction = (np.exp(model.predict(trip)[0]) - 1)//60
     prediction = {'prediction': prediction}
     return prediction
     

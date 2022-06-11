@@ -1,4 +1,5 @@
 backend/taxi_nyc_backend
+frontend/taxi_nyc_frontend
 backend/notebooks/.ipynb_checkpoints
 backend/notebooks/Rosneft.ipynb
 backend/notebooks/taxi_trip_duration.ipynb
