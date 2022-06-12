@@ -9,3 +9,8 @@ backend/catboost_info
 backend/request_test.py
 backend/cli_commands.txt
 .DS_Store
+backend/src/__pycache__
+backend/src/features/__pycache__
+backend/src/data/__pycache__
+backend/src/model/__pycache__
+
