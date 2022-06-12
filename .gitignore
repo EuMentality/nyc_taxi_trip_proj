@@ -5,4 +5,7 @@ backend/notebooks/Rosneft.ipynb
 backend/notebooks/taxi_trip_duration.ipynb
 backend/notebooks/catboost_info
 backend/__pycache__
+backend/catboost_info
+backend/request_test.py
+backend/cli_commands.txt
 .DS_Store
