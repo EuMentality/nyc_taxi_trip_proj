@@ -1,6 +1,6 @@
 import requests
 
-path = "http://localhost:5005"
+path = "https://taxi-nyc-fastapi.herokuapp.com"
 
 features = {
     'pickup_longitude': -73.982155,

@@ -1,0 +1,10 @@
+backend:
+  url:
+    'http://localhost:8000/predict'
+
+map:
+  width:
+    800
+  height:
+    650
+

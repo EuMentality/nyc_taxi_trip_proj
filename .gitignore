@@ -1,5 +1,7 @@
 backend/taxi_nyc_backend
-frontend/taxi_nyc_frontend
+frontend/venv
+frontend/__pycache__
+frontend/asd.py
 backend/notebooks/.ipynb_checkpoints
 backend/notebooks/Rosneft.ipynb
 backend/notebooks/taxi_trip_duration.ipynb
