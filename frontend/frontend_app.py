@@ -26,9 +26,8 @@ if page == 'Enter Coordinates':
     dropoff_longitude = st.sidebar.number_input('Dropoff Longitude', -74.020000, -73.9301, -73.990000, step=0.00001, format="%.6f")
     pickup_datetime = datetime.now(pytz.timezone('US/Eastern')).strftime("%Y-%m-%d %H:%M:%S")
     st.sidebar.write(f'Time Now in NYC:  {str(pickup_datetime)}')
-    passenger_count = st.sidebar.slider('Number of Passengers', 1, 9, 1)
-    vendor_id = int(np.random.choice([1, 2], 1)[0])
-    store_and_fwd_flag = str(np.random.choice(['N', 'Y'], 1)[0])
+    passenger_count = st.sidebar.slider('Number of Passengers', 1, 6, 1)
+    
 else:
     pickup_address = st.sidebar.text_input('Pickup Address', 'Empire State Building')
     dropoff_address = st.sidebar.text_input('Dropoff Address', 'Museum of the NYC')
@@ -41,18 +40,15 @@ else:
     dropoff_longitude = getloc_end.longitude
     pickup_datetime = datetime.now(pytz.timezone('US/Eastern')).strftime("%Y-%m-%d %H:%M:%S")
     st.sidebar.write(f'Time Now in NYC:  {str(pickup_datetime)}')
-    passenger_count = st.sidebar.slider('Number of Passengers', 1, 9, 1)
-    vendor_id = int(np.random.choice([1, 2], 1)[0])
-    store_and_fwd_flag = str(np.random.choice(['N', 'Y'], 1)[0])
+    passenger_count = st.sidebar.slider('Number of Passengers', 1, 6, 1)
 
 trip_params = {'pickup_latitude': pickup_latitude,
                 'pickup_longitude': pickup_longitude, 
                 'dropoff_latitude': dropoff_latitude,
                 'dropoff_longitude': dropoff_longitude,
                 'pickup_datetime': pickup_datetime,
-                'passenger_count': passenger_count,
-                'vendor_id': vendor_id,
-                'store_and_fwd_flag': store_and_fwd_flag}
+                'passenger_count': passenger_count}
+                
 start_trip_coords = (pickup_latitude, pickup_longitude)
 end_trip_coords = (dropoff_latitude, dropoff_longitude)
 

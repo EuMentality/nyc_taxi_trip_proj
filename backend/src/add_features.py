@@ -3,7 +3,7 @@ import numpy as np
 
 
 def add_features(df: pd.DataFrame, purpose: str = 'predict') -> pd.DataFrame:
-    """Inplace Data proccessing for tuning model or prediction.
+    """Data proccessing for tuning model or prediction.
     :param data: df 
     :param purpose: df purpose, train model or predict
     :return df: df with generated features
@@ -30,10 +30,10 @@ def add_features(df: pd.DataFrame, purpose: str = 'predict') -> pd.DataFrame:
     df['manh_length'] = df.delta_manh_long + df.delta_manh_lat
     df.drop(['diff_latitude', 'diff_longitude', 'Euclidean', 'delta_manh_long', 'delta_manh_lat'], axis=1, inplace=True)
     # rare categories
-    df['passenger_count'] = df['passenger_count'].apply(lambda x: -1 if (x in [7,8,9,0]) else x)
+    df['passenger_count'] = df['passenger_count'].apply(lambda x: 1 if (x < 5) else 2)
     # list of needed cols
-    columns = ['vendor_id', 'passenger_count', 'pickup_longitude', 'pickup_latitude',
-               'dropoff_longitude', 'dropoff_latitude', 'store_and_fwd_flag', 'pickup_month',
+    columns = ['passenger_count', 'pickup_longitude', 'pickup_latitude',
+               'dropoff_longitude', 'dropoff_latitude', 'pickup_month',
                'pickup_weekday', 'pickup_hour', 'high_traffic', 'anomaly', 'manh_length']
 
     if purpose == 'tuning':

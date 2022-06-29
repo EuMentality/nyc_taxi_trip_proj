@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.model import make_prediction
-from src.features import add_features
+from src import add_features, make_prediction
+
 # trash
 import pandas as pd
 import numpy as np
 
 app = FastAPI()
-
 
 class TripConfigure(BaseModel):
     """
@@ -19,8 +18,6 @@ class TripConfigure(BaseModel):
     dropoff_longitude: float
     pickup_datetime: str
     passenger_count: int
-    vendor_id: int
-    store_and_fwd_flag: str
 
 
 @app.post('/predict')
