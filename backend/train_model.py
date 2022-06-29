@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 from src import upload_config, get_data, clean_data, add_features
 
 
-
 def train(df: pd.DataFrame):
     """Function trains the Catboost model on the input data and returns it.
     :param df: Train dataset

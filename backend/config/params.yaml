@@ -1,12 +1,12 @@
 data_split:
   test_size:
-    0.25
+    0.20
   test_split_seed:
-    20
+    64
   valid_size:
-    0.25 
+    0.20 
   valid_split_seed:
-    20
+    22
     
 hyperparams:
   seed:

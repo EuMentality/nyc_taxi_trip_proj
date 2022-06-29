@@ -1,10 +1,9 @@
+import pandas as pd
+import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
 from src import add_features, make_prediction
 
-# trash
-import pandas as pd
-import numpy as np
 
 app = FastAPI()
 
