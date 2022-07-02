@@ -1,4 +1,4 @@
-Backend Organization
+Frontend Organization
 ===============
     ├── config
     │   └── params.yaml          <- Map & URL Backend configuration.
