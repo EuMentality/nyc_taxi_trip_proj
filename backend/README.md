@@ -14,9 +14,9 @@ Backend Organization
     │   ├── __init__.py          <- Make src a Python module.
     │   ├── add_features.py      <- Add features for tuning or predicting.
     │   ├── clean_data.py        <- Data cleaning.
-    │   ├── config.py            <- Upload configuration.
+    │   ├── config.py            <- Import Configuration.
     │   ├── get_data.py          <- Download raw data from storage.
-    │   └── make_prediction.py   <- Predicting trip duration: frontend request.
+    │   └── make_prediction.py   <- Predict trip duration: frontend request.
     │                     
     ├── README.md                <- Backend Description.
     │
