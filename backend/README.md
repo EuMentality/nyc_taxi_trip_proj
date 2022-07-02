@@ -1,7 +1,5 @@
-Summary Backend
-===============
 Backend Organization
--------------------
+===============
     ├── config
     │   └── params.yaml          <- Catboost train and validation params.
     │
@@ -20,7 +18,7 @@ Backend Organization
     │   ├── get_data.py          <- Download raw data from storage.
     │   └── make_prediction.py   <- Predicting trip duration: frontend request.
     │                     
-    ├── README.md                <- Description.
+    ├── README.md                <- Backend Description.
     │
     ├── app.py                   <- FastAPI backend app.
     │
