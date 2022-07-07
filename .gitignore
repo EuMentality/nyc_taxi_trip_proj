@@ -6,6 +6,8 @@ backend/notebooks/.ipynb_checkpoints
 backend/notebooks/1_raw_data_processing.ipynb
 backend/notebooks/2_catboost_tune.ipynb
 backend/notebooks/catboost_info
+backend/notebooks/taxi_trip_duration.ipynb
+backend/notebooks/Rosneft.ipynb
 backend/src/__pycache__
 backend/taxi_nyc_backend
 backend/cli_commands.txt

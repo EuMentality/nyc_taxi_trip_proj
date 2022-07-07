@@ -3,7 +3,12 @@ data_split:
   test_split_seed: 64
   valid_size: 0.2
   valid_split_seed: 22
-hyperparams:
+
+k_means:
+  n_clusters: 10
+  random_state: 2
+
+catboost:
   boosting_type: Plain
   bootstrap_type: Bernoulli
   depth: 11
@@ -15,3 +20,6 @@ hyperparams:
   task_type: CPU
   use_best_model: false
   verbose: false
+
+
+
