@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def clean_data(df: pd.DataFrame) -> pd.DataFrame:
+def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     """Function cleans data from outliers and irrelevant trips.
     :param df: raw dataframe.
     :return df: cleared df.
@@ -13,6 +13,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         b = y_1 - k*x_1
         return k, b
 
+    df = data.copy()
     mask_1 = df['vendor_id'] == 1
     mask_2 = df['store_and_fwd_flag'] == 'N'
     mask_3 = df['passenger_count'] != 0
@@ -94,3 +95,4 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     cols = ['pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude',
             'trip_duration', 'pickup_datetime', 'passenger_count',]
     return df[cols]
+
