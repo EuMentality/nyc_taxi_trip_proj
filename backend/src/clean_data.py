@@ -6,7 +6,7 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     :param df: raw dataframe.
     :return df: cleared df.
     """
-    def find_line(A: tuple[float, float], B: tuple[float, float]):
+    def find_line(A, B):
         y_1, x_1 = A
         y_2, x_2 = B
         k = (y_2 - y_1)/(x_2 - x_1)
