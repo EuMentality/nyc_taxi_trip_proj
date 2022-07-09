@@ -1,25 +1,20 @@
+catboost:
+  boosting_type: Plain
+  bootstrap_type: Bernoulli
+  depth: 11
+  iterations: 1923
+  l2_leaf_reg: 0.5639030283061931
+  learning_rate: 0.07433145899644433
+  random_state: 20
+  subsample: 0.9217285030632677
+  task_type: GPU
+  use_best_model: false
+  verbose: false
 data_split:
   test_size: 0.2
   test_split_seed: 64
   valid_size: 0.2
   valid_split_seed: 22
-
 k_means:
   n_clusters: 10
   random_state: 2
-
-catboost:
-  boosting_type: Plain
-  bootstrap_type: Bernoulli
-  depth: 11
-  iterations: 1384
-  l2_leaf_reg: 0.3752182870326149
-  learning_rate: 0.06480627095654698
-  random_state: 20
-  subsample: 0.9957290923886816
-  task_type: CPU
-  use_best_model: false
-  verbose: false
-
-
-
