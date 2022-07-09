@@ -7,7 +7,7 @@ catboost:
   learning_rate: 0.07433145899644433
   random_state: 20
   subsample: 0.9217285030632677
-  task_type: GPU
+  task_type: CPU
   use_best_model: false
   verbose: false
 data_split:
