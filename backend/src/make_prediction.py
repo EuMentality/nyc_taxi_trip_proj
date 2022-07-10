@@ -8,6 +8,6 @@ def make_prediction(df: pd.DataFrame) -> int:
     :param df: input data
     :return: taxi trip duration
     """
-    model = CatBoostRegressor().load_model('model/catboost.dump')
+    model = CatBoostRegressor().load_model('model/catboost.bin')
     prediction = (np.exp(model.predict(df)[0]) - 1)//60
     return prediction

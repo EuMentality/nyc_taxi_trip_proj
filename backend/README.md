@@ -4,11 +4,12 @@ Backend Organization
     │   └── params.yaml          <- Catboost train and validation params.
     │
     ├── model
-    │   └── catboost.dump        <- Trained model for prediction Taxi Trip Duration.
-    │
+    │   ├── catboost.bin         <- Trained Catboost model.
+    │   └── kmeans.pkl           <- Trained K-means model.
+    │ 
     ├── notebooks
-    │   ├── 1_tuning.ipynb       <- Tuning params with Optuna, Quality Estimation, Feature Importance.
-    │   └── 2_eda.ipynb          <- EDA.
+    │   ├── 1_EDA.ipynb          <- EDA.
+    │   └── 2_tuning.ipynb       <- Tuning params with Optuna, Quality Estimation, Feature Importance.
     │
     ├── src
     │   ├── __init__.py          <- Make src a Python module.
@@ -24,4 +25,5 @@ Backend Organization
     │
     ├── requirements.txt         <- Requirements for env.
     │
-    └── train.py                 <- Training & Saving model.
+    ├── train_catboost.py        <- Training & Saving Catboost.
+    └── train_kmeans.py          <- Training & Saving K-means.  

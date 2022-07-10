@@ -1,18 +1,16 @@
 Frontend Organization
 ===============
     ├── config
-    │   └── params.yaml          <- Map & URL Backend configuration.
+    │   └── params.yaml          <- URL-Backend & Map configuration.
     │
     ├── src
     │   ├── __init__.py          <- Make src a Python module.
-    │   ├── build_route.py       <- Rout search on the map.
+    │   ├── build_route.py       <- Rout on the map.
     │   ├── config.py            <- Import config.
-    │   └── predict.py           <- Send post request to Backend for predicting Trip Duration
+    │   └── predict.py           <- Send post request to Backend for predicting Trip Duration.
     │                     
-    ├── README.md                <- Backend Description.
+    ├── frontend_app.py          <- Streamlit "frontend" app.
     │
-    ├── app.py                   <- FastAPI backend app.
+    ├── README.md                <- Frontend decription.
     │
-    ├── requirements.txt         <- Requirements for env.
-    │
-    └── train.py                 <- Training & Saving model.
+    └── requirements.txt         <- Requirements for env.
