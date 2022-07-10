@@ -12,11 +12,16 @@ def train_catboost(df: pd.DataFrame):
     :param df: Train dataset
     :return: Catboost trained model
     """
-    # config
+    # Config
     cfg = import_config('config/params.yaml')
     catboost_params = cfg['catboost']
     catboost_params['verbose'] = 400
-    # data preprocessing
+    # Reduce the number of trees and increase the lerning rate, 
+    # because with the initial number of trees, the model turns out to be too heavy for deployment to heroku
+    alpha = 1.6
+    catboost_params['iterations'] = catboost_params['iterations']//alpha
+    catboost_params['learning_rate'] = catboost_params['learning_rate']*alpha
+    # Data preprocessing
     cat_feature_indices = np.array([0, 5, 6, 7, 8, 9, 11])
     X = df.drop('trip_duration', axis=1)
     y = df.trip_duration
@@ -44,7 +49,7 @@ if __name__ == '__main__':
     start_time = time.time()
     logging.info(f'Fitting Catboost. {datetime.utcfromtimestamp(start_time).strftime("%Y-%m-%d %H:%M:%S")}')
     model = train_catboost(df)
-    model.save_model('model/catboost.dump')
+    model.save_model('model/catboost.bin', format='cbm')
     end_time = time.time()
     execution_time = str(timedelta(seconds=(end_time - start_time))).split('.')[0]
     logging.info(f'Execution time = {execution_time}')
