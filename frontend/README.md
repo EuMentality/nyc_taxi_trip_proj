@@ -7,7 +7,8 @@ Frontend Organization
     │   ├── __init__.py          <- Make src a Python module.
     │   ├── build_route.py       <- Rout on the map.
     │   ├── config.py            <- Import config.
-    │   └── predict.py           <- Send post request to Backend for predicting Trip Duration.
+    │   ├── predict.py           <- Post request to Backend for predicting Trip Duration.
+    │   └── ptr_manh.jpg         <- Main picture.
     │                     
     ├── frontend_app.py          <- Streamlit "frontend" app.
     │
