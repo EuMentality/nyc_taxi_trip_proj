@@ -1,13 +1,13 @@
 import pytz
 import streamlit as st
-import numpy as np
 import osmnx as ox
+from PIL import Image
 from datetime import datetime
 from geopy.geocoders import Nominatim
 from streamlit_folium import folium_static
 from src import find_shortest_route, predict_trip_duration, upload_config
 
-
+st.set_page_config(layout="wide")
 # 1. Upload Config
 cfg = upload_config('config/params.yaml')
 url_backend = cfg['backend']['url']
@@ -53,13 +53,31 @@ start_trip_coords = (pickup_latitude, pickup_longitude)
 end_trip_coords = (dropoff_latitude, dropoff_longitude)
 
 # 3. Main Page Seggings
-st.write(' # Manhattan Taxi Trip')
+st. markdown("<h1 style='text-align: center; color: black;'>Manhattan Taxi Trip </h1>", unsafe_allow_html=True)
 ox.config(log_console=True, use_cache=True)
 if st.sidebar.button('Predict Trip Duration!'):
-    ans = predict_trip_duration(url_backend, trip_params)
-    ans_text = f'The duration of your trip will be {int(ans["prediction"])} minutes!'
-    with st.spinner('The route of the trip is being built ^_^'):
-            shortest_route = find_shortest_route(start_trip_coords, end_trip_coords)
-            st_data = folium_static(shortest_route, width=map_with, height=map_height)
-    st.success(ans_text)
+    col1, col2, col3 = st.columns([2, 7, 1])
+    with col1:
+        st.write("")
+    with col2:
+        ans = predict_trip_duration(url_backend, trip_params)
+        ans_text = f'The duration of your trip will be {int(ans["prediction"])} minutes!'
+        with st.spinner('The route of the trip is being built ^_^  :oncoming_taxi:'):
+                shortest_route = find_shortest_route(start_trip_coords, end_trip_coords)
+                st_data = folium_static(shortest_route, width=map_with, height=map_height)
+        st.success(ans_text)
+    with col3:
+        st.write("")
+else:
+    col1, col2, col3 = st.columns([0.8, 7, 1])
+    with col1:
+        st.write("")
+    with col2:
+        text = "Enter Trip Parameters: Left Panel"
+        st. markdown(f"<h5 style='text-align: center; color: gray;'>{text} </h5> ", unsafe_allow_html=True)
+        # Image
+        image = Image.open('src/ptr_manh.jpg')
+        st.image(image)
+    with col3:
+        st.write("")
 
