@@ -12,6 +12,6 @@ Frontend Organization
     │                     
     ├── frontend_app.py          <- Streamlit "frontend" app.
     │
-    ├── README.md                <- Frontend decription.
+    ├── README.md                <- Frontend description.
     │
     └── requirements.txt         <- Requirements for env.
