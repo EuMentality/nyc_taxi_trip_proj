@@ -10,7 +10,7 @@ backend/notebooks/catboost_info
 backend/notebooks/taxi_trip_duration.ipynb
 backend/notebooks/Rosneft.ipynb
 backend/src/__pycache__
-backend/taxi_nyc_backend
+backend/venv
 backend/cli_commands.txt
 backend/request_test.py
 backend/.DS_Store
