@@ -9,9 +9,13 @@ Frontend Organization
     │   ├── config.py            <- Import config.
     │   ├── predict.py           <- Post request to Backend for predicting Trip Duration.
     │   └── ptr_manh.jpg         <- Main picture.
-    │                     
-    ├── frontend_app.py          <- Streamlit "frontend" app.
     │
-    ├── README.md                <- Frontend description.
+    ├── .dockerignore            <- Dockerignore file.
+    │
+    ├── Dockerfile               <- Dockerfile for "frontend" image building.
+    │                     
+    ├── README.md                <- Frontend Repo Description.
+    │
+    ├── frontend_app.py          <- Streamlit "frontend" app.
     │
     └── requirements.txt         <- Requirements for env.
