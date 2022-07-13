@@ -1,0 +1,7 @@
+/venv
+/cache
+/src/__pycache__
+__pycache__
+cli.txt
+.DS_Store
+.gitignore
