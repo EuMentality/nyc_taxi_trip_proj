@@ -4,7 +4,8 @@ from pydantic import BaseModel
 from src import add_features, make_prediction
 
 
-app = FastAPI()
+app = FastAPI(title='NYC Manhattan Taxi Trip Duration',
+              description='Backend server for Predicting Taxi Trip Duration based on incoming data from Frontend')
 
 class TripConfigure(BaseModel):
     """
