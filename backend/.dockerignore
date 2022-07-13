@@ -1,0 +1,12 @@
+/venv
+/notebooks
+/catboost_info
+/src/__pycache__
+__pycache__
+cli_commands.txt
+requirements_work.txt
+request_test.py
+.DS_Store
+.gitignore
+
+
