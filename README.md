@@ -4,7 +4,7 @@
 Pet-Project 
 
 
-<img src = "https://raw.githubusercontent.com/EuMentality/nyc_taxi_trip_proj/main/readme_img/example.png" width = "500" height = "250" align = "center" />
+<img src = "https://raw.githubusercontent.com/EuMentality/nyc_taxi_trip_proj/main/readme_img/example.png" width = "1000"  align = "center" />
 
 ### Repository Organization 
 ---
