@@ -72,7 +72,7 @@ To search hyperparameters was used Optuna.
 
 ##### 2.2 Model quality estimation
 
-| Data | MSLE | MAE         | *$R^2$*|
+| Data | MSLE | MAE         | $R^2$|
 | ---  | ---  | ---         | --- |
 | Train| 0.08 | 2.27 minutes| 0.84 |
 | Test | 0.12 | 2.42 minutes| 0.75 |
@@ -82,5 +82,7 @@ To search hyperparameters was used Optuna.
 #### 3. How it works!
 
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EuMentality/nyc_taxi_trip_proj/main/readme_img/hiw_main.png" width = "650" />
+</p>
 
