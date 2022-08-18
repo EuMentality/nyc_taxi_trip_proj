@@ -61,10 +61,10 @@ Features:
     - time-based features          <- hour, weekday, high traffic(binary), etc.
     - coordinates-based features   <- latitude/longitude.
 
-[Read more](https://github.com/EuMentality/nyc_taxi_trip_proj/blob/main/backend/notebooks/1_EDA.ipynb) about data cleaning & feature preprocessing in the presentation format (notebook).
 #### 2. Fit-Predict
 ##### 2.1 Model training
 Catboost model was used for training.
+
 Loss-function MSLE, since we need the function which're penalize for under-prediction more than through over-prediction.  
 
 To search hyperparameters was used Optuna.
@@ -76,8 +76,6 @@ To search hyperparameters was used Optuna.
 | ---  | ---  | ---         | --- |
 | Train| 0.08 | 2.27 minutes| 0.84 |
 | Test | 0.12 | 2.42 minutes| 0.75 |
-
-[Read more](https://github.com/EuMentality/nyc_taxi_trip_proj/blob/main/backend/notebooks/1_EDA.ipynb) about `2.1` & `2.2` (notebook).
 
 #### 3. How it works!
 
